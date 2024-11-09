@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stack>
+#include <string>
+
+using namespace std;
+
+int main() {
+    // Create a stack of integers
+    stack<int> myStack;
+
+    // Push elements onto the stack
+    myStack.push(10);
+    myStack.push(20);
+    myStack.push(30);
+
+    // Display the top element
+    cout << "Top element: " << myStack.top() << endl; // Outputs 30
+
+    // Pop an element from the stack
+    myStack.pop();
+
+    // Display the new top element
+    cout << "Top element after pop: " << myStack.top() << endl; // Outputs 20
+
+    // Display the size of the stack
+    cout << "Size of stack: " << myStack.size() << endl; // Outputs 2
+
+    // Check if the stack is empty
+    if (myStack.empty()) {
+        cout << "Stack is empty." << endl;
+    } else {
+        cout << "Stack is not empty." << endl; // Outputs this line
+    }
+
+    return 0;
+}
